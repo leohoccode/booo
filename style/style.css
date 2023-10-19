@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  z-index: -1;
 }
 
 .container {
@@ -42,6 +43,7 @@ body {
 
 .one {
   font-size: 4.5rem;
+  z-index: -1;
 }
 
 .one > img {
@@ -49,15 +51,18 @@ body {
   margin-bottom: 10px;
   max-width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 .two {
   font-size: 1.2rem;
   font-weight: lighter;
+  z-index: -1;
 }
 
 .three {
   font-size: 3rem;
+  z-index: -1;
 }
 
 .four .text-box {
@@ -67,11 +72,13 @@ body {
   border-radius: 5px;
   padding: 10px;
   position: relative;
+  z-index: -1;
 }
 
 .text-box p {
   margin: 0;
   text-align: left;
+  z-index: -1;
 }
 
 .text-box span {
@@ -106,6 +113,7 @@ body {
 
 .five .idea-5 {
   font-size: 4rem;
+  z-index: -1;
 }
 
 .idea-5 span,
@@ -116,6 +124,7 @@ body {
 
 .idea-6 span {
   font-size: 15rem;
+  z-index: -1;
 }
 
 .six {
