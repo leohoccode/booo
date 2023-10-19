@@ -6,36 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Happy Vietnam Women's Day </title>
-  <button id="ASong" onClick="playPause()">
-  <audio
-    src="hbd.mp3"
-    autoplay
-    loop
-  ></audio>
-  Song
-</button>
-
-<script>
-  var aud = document.getElementById("ASong").children[0];
-  var isPlaying = false;
-  aud.pause();
-
-  function playPause() {
-    if (isPlaying) {
-      aud.pause();
-    } else {
-      aud.play();
-    }
-    isPlaying = !isPlaying;
-  }
-</script>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-       
+     <audio id="myAudio">
+  <source src="hbd.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>  
   <div class="container">
     <div class="one">
       <h1 class="one">
